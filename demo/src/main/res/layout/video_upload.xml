@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/btnloadImage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Load Video"
+            android:textColor="@color/white"
+
+            android:textSize="12sp"
+            android:background="#3091a0"
+            android:onClick="onLoadImageClick"  />
+
+        <TextView
+
+            android:id="@+id/btncropImage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+
+            android:textSize="12sp"
+            android:layout_marginLeft="1dp"
+            android:background="#3091a0"
+            android:gravity="center"
+            android:text="Crop Image"
+            />
+
+
+        <TextView
+            android:id="@+id/imagesendtoServer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+
+            android:textSize="12sp"
+            android:layout_marginLeft="1dp"
+            android:background="#3091a0"
+            android:layout_marginRight="10dp"
+            android:text="Send Image"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/topLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:layout_below="@id/top"
+        android:orientation="vertical">
+        <VideoView
+            android:id="@+id/mCropImageView"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

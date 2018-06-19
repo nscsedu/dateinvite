@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewBg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:context="info.androidhive.cardview.MainActivity"
+    tools:showIn="@layout/activity_main">
+  <TextView
+      android:id="@+id/test1234"
+      android:layout_width="fill_parent"
+      android:layout_height="70dp"
+
+
+      />
+  <TextView
+      android:id="@+id/test123"
+      android:layout_below="@+id/test1234"
+      android:layout_width="fill_parent"
+      android:layout_height="30dp"
+      android:text="Top Countries:"
+      android:gravity="center"
+
+      />
+
+  <!--<TextView
+      android:gravity="center"
+      android:layout_marginTop="5dp"
+      android:layout_below="@+id/test1"
+      android:id="@+id/test2"
+      android:layout_marginLeft="2dp"
+      android:layout_marginRight="2dp"
+      android:layout_width="fill_parent"
+      android:layout_height="30dp"
+      android:text="Canada"
+      android:background="@drawable/my_border"
+      />-->
+
+
+  <!--<TextView
+      android:id="@+id/demo"
+      android:layout_marginTop="5dp"
+      android:layout_width="fill_parent"
+      android:layout_height="30dp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_below="@+id/test2"
+      android:background="@drawable/my_border"
+      android:gravity="center"
+      android:text="Australia" />-->
+
+
+  <LinearLayout
+      android:id="@+id/demo"
+      android:layout_width="fill_parent"
+      android:layout_height="40dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginLeft="2dp"
+      android:layout_marginRight="2dp"
+      android:background="#D3D3D3"
+      android:textColor="#646666"
+      android:orientation="horizontal"
+      android:weightSum="21"
+      android:layout_below="@+id/test123"
+     >
+
+    <TextView
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:textColor="#646666"
+        android:gravity="center"
+
+        />
+
+    <ImageView
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/colombia"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+
+        android:gravity="center"
+
+        />
+    <TextView
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+
+        android:gravity="center"
+
+        />
+    <ImageView
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/usa"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+
+        android:gravity="center"
+
+        />
+    <TextView
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+
+        android:gravity="center"
+
+        />
+    <ImageView
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/brazil"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+
+        android:gravity="center"
+
+        />
+
+  </LinearLayout>
+  <LinearLayout
+      android:id="@+id/demo1"
+
+      android:layout_width="fill_parent"
+      android:layout_height="40dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginLeft="2dp"
+      android:layout_marginRight="2dp"
+      android:background="#D3D3D3"
+      android:textColor="#646666"
+      android:orientation="horizontal"
+      android:weightSum="12"
+      android:layout_below="@+id/demo"
+      >
+    <TextView
+        android:layout_weight="10"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Contact Admin"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/contact_admin"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/headphone"
+        android:gravity="center"/>
+
+
+  </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_below="@+id/demo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:layout_weight="1"/>
+
+</RelativeLayout>

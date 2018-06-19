@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+
+    >
+    <LinearLayout
+        android:layout_weight=".4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_weight="4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_weight="4"
+            android:background="@drawable/button_bgwhite_rounded_corners"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="About you"
+                    android:textSize="20sp"
+                    android:gravity="center"
+
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <EditText
+                    android:textSize="18sp"
+                    android:gravity="top"
+                    android:id="@+id/about_you"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f6f6f6"
+                    android:hint="Max 3000 charecters "
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="4.4"
+        android:background="@drawable/button_bgwhite_rounded_corners"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/tvTitlekid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:text="What type of dating you are available for?"
+
+
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+
+
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:textSize="14sp"
+                    >
+
+
+                </TextView>
+
+
+                <RadioButton
+                    android:id="@+id/radioCoffee"
+                    android:buttonTint="@color/your_color"
+                    android:textSize="18sp"
+                    android:text="Coffee"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+
+
+                <RadioButton
+                    android:textSize="18sp"
+                    android:buttonTint="@color/your_color"
+                    android:id="@+id/radioDinner"
+                    android:text="Dinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:textSize="14sp"
+                    >
+
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+
+
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6">
+
+
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:textSize="14sp"
+                    >
+
+
+                </TextView>
+
+
+                <RadioButton
+                    android:textSize="18sp"
+                    android:id="@+id/radioDrinks"
+                    android:text="Drinks"
+                    android:buttonTint="@color/your_color"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+
+
+                <RadioButton
+                    android:textSize="18sp"
+                    android:id="@+id/radiokidno"
+                    android:text="Night Out"
+                    android:buttonTint="@color/your_color"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    />
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:textSize="14sp"
+                    >
+
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_below="@+id/radioGroupkid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="(You can choose multiple options)"
+                android:textSize="18sp"
+
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5">
+
+
+
+            <Button
+                android:layout_gravity="bottom|center"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_bgdarkash_rounded_corners"
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Back" />
+
+            <Button
+                android:layout_gravity="bottom|center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_bgdarkash_rounded_corners"
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Continue" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="top|center"
+        android:layout_weight=".7"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:gravity="top|center"
+
+            android:id="@+id/bottom1"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+
+            android:background="@drawable/process4"
+
+            android:scaleType="fitXY"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

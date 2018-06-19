@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.braincraft.social.dateinvite">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+
+
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/asdasd"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <activity
+            android:name=".ViewTest"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.braincraft.social.dateinvite.ImageChange"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.WelcomeActivity"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name="com.braincraft.social.dateinvite.ProfileActivity"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name="com.braincraft.social.dateinvite.Testscroll"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name="com.braincraft.social.dateinvite.Test2"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.VideoUploadtoServer"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.MessageBeforeReg"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.Login"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.VideoUpload"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+
+
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.InformationActivity"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.RegistarActivity"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.SplashActivity"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name="com.braincraft.social.dateinvite.Testcrop"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name="com.braincraft.social.dateinvite.InitPhoto"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name=".PhotoSelect"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".SelectInterest"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name=".ProfileImage"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.ThumbnailActivity"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name="com.braincraft.social.dateinvite.InitCamera"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.Terms"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name="com.braincraft.social.dateinvite.Privacy"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name="com.braincraft.social.dateinvite.Video"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.InformationActivity1"
+            android:label="@string/thumbnail_preview"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+
+
+
+        <activity
+            android:name="com.braincraft.social.activity.VideoMessage"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Liked"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.LikedMe"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.Invite"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.IndividualInvitation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Interaction"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.ContactAdmin"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.dateinvite.test1"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0c51f00a5e0ceb7bc966f82e9d6aab7198d0c5b1" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

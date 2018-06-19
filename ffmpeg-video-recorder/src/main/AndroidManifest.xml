@@ -1,0 +1,424 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.braincraft.social" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+
+
+        android:largeHeap="true">
+
+
+        <activity
+            android:name="com.braincraft.social.activity.FFmpegRecorderActivity"
+            android:theme="@style/ActivityTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.FFmpegPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.InformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.PhotoSelect"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.chatmessage"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Page_Activity1"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.infinite_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Page_Activity8"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Page_Activity4"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Page_Activity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Page_Activity3"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.InviteNew"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.InviteNew1"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Page_Activity6"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.InformationActivity1"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.CardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.MainTest"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.Privacy"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.Terms"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.About"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.Help"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.BlockUser"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.ContactAdmin"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+        android:name="com.braincraft.social.activity.PushNotification"
+        android:screenOrientation="portrait"
+        android:theme="@style/ActivityTheme"
+        android:configChanges="orientation|screenSize" >
+    </activity>
+        <activity
+            android:name="com.braincraft.social.activity.ChangePassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Messages"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.VideoMessage"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Liked"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.AndroidListViewActivity"
+            android:label="Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.ListDisplay"
+            android:label="Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.LikedMe"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.MessageText"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Invite"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Invite1"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Invite2"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Invite3"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Invite4"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.InitCamera"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.IndividualInvitation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Interaction"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.Page_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.UploadImage1"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.UploadImage2"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.Filter"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+
+        <activity
+            android:name="com.braincraft.social.activity.ImageSlider"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.Chat"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.ind_dinner"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.ind_drink"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Testcrop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Testcrop3"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Testcrop1"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.Testcrop2"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.potocapture"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.Video"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.AllVideomessage"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+
+        <activity
+            android:name="com.braincraft.social.activity.video_play"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.braincraft.social.activity.video_play_all"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name="com.braincraft.social.activity.WhatsApp"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_bgwhite_rounded_corners"
+
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/uparrow"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:background="#ffffff"
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="Add a Photo now"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:gravity="center"
+                android:background="#ffffff"
+                android:id="@+id/tvTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="Profile with photo are
+  20x more attractive"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+
+
+                android:textAlignment="center"/>
+
+
+
+
+            <RelativeLayout
+                android:background="#ffffff"
+                android:id="@+id/relativeLayoutThuid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_below="@id/relativeLaoytSecond"
+                android:layout_marginTop="10dp"
+
+                >
+
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="10dp">
+                    <ImageView
+
+                        android:id="@+id/imageview"
+
+
+
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+
+
+
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColor="#0000FF"
+                        android:gravity="center"
+                        android:text="Choose from library"
+                        android:paddingLeft="10dp" />
+                    <TextView
+                        android:id="@+id/button2"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/button1"
+                        android:textColor="#0000FF"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+
+                        android:paddingLeft="10dp" />
+
+                    <TextView
+                        android:id="@+id/Next"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/button2"
+                        android:layout_centerHorizontal="true"
+                        android:text="Next" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+
+            android:text="test"/>
+        <!-- <ImageView
+
+
+             android:id="@+id/bottom1"
+             android:layout_width="100dp"
+             android:layout_height="20dp"
+             android:layout_marginBottom="5dp"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:layout_gravity="center"
+             android:background="@drawable/process3"
+             android:gravity="center"
+             android:scaleType="fitXY"
+             android:textAlignment="center"
+             android:textSize="20sp"
+             android:textStyle="bold" />-->
+
+    </LinearLayout>
+</LinearLayout>

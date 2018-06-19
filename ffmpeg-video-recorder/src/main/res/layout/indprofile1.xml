@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="?attr/homeAsUpIndicator" >
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+
+            android:layout_height="30dp"
+
+
+
+            android:text="androidtest"
+            />
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fillViewport="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="660dp">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/like_off"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginRight="20dp"
+
+                    android:background="@drawable/like_off"
+
+
+
+
+                    />
+
+                <TextView
+                    android:background="@drawable/back"
+
+android:layout_marginRight="5dp"
+                    android:id="@+id/right"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="300dip"
+                    android:layout_marginLeft="20dp"
+
+
+
+
+
+
+
+                    />
+                <TextView
+                    android:background="@drawable/next"
+
+android:layout_marginLeft="5dp"
+
+                    android:id="@+id/left"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="300dip"
+                    android:layout_marginRight="20dp"
+
+
+
+                    android:padding="12dip"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/sendinvitation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="595dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+
+                    android:background="@drawable/invitation_new_en"
+
+                    android:padding="12dip"
+
+
+                    />
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <VideoView
+
+                        android:id="@+id/VideoView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:gravity="center"
+                        android:scaleType="fitXY">
+
+                    </VideoView>
+                </RelativeLayout>
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/select"
+                android:text="select"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/my_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="12">
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:text="Pine City United States" />
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:layout_gravity="center|right"
+                            android:gravity="center|right"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="28" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+               >
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="My summary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/my_border">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/my_border"
+                    android:text="  Android test account" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                >
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="About me" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/my_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="  Have Kids:  No" />
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="  Drink:" />
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="  Smoke:" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+               >
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Dating Preferences" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:textSize="18sp"
+android:text="  Coffee"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/my_border" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:weightSum="14"
+                    android:layout_gravity="center|bottom"
+                    android:gravity="center|bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+<LinearLayout
+    android:paddingTop="5dp"
+    android:layout_width="0dp"
+    android:layout_height="35dp"
+    android:layout_weight="1"
+    android:layout_gravity="center|bottom"
+    android:gravity="right|bottom"
+    >
+                    <TextView
+
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/block"
+
+                        />
+</LinearLayout>
+                    <TextView
+android:layout_margin="5dp"
+
+                        android:layout_gravity="left|center"
+                        android:gravity="center|bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="4"
+android:textSize="16sp"
+                        android:text="Block This User" />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+
+                <LinearLayout
+                    android:weightSum="12"
+                    android:layout_gravity="center|bottom"
+                    android:gravity="center|bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

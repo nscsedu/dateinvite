@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="?attr/homeAsUpIndicator" >
+        <LinearLayout
+            android:weightSum="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/english"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_bgwhite_rounded_corners"
+               android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+
+                android:textSize="10sp"
+                android:layout_height="match_parent"
+                android:text="English"/>
+            <TextView
+                android:id="@+id/spanish"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:background="@drawable/button_bgwhite_rounded_corners"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:text="Spanish"
+                android:layout_height="match_parent" />
+
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/portugues"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:background="@drawable/button_bgwhite_rounded_corners"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:text="Portugues"
+                android:layout_height="match_parent" />
+
+            android:layout_height="match_parent" />
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+
+           android:background="#ffffff"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="0dp">
+           <TextView
+               android:gravity="center"
+               android:text="Choose one card to send your invitation."
+
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:background="#ffffff"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_weight="4"
+           android:layout_width="match_parent"
+           android:layout_height="0dp">
+           <LinearLayout
+               android:weightSum="2"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <ImageView
+                   android:id="@+id/hello"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:background="@drawable/small_card_coffee_es"
+                   android:layout_height="match_parent" />
+               <ImageView
+                   android:id="@+id/coffe"
+                   android:background="@drawable/small_card_coffee_es"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent" />
+
+           </LinearLayout>
+
+       </LinearLayout>
+       <LinearLayout
+           android:background="#ffffff"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+
+           android:layout_weight="4"
+           android:layout_width="match_parent"
+           android:layout_height="0dp">
+           <LinearLayout
+               android:weightSum="2"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <ImageView
+                   android:id="@+id/cocktail"
+                   android:background="@drawable/small_card_drink_es"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent" />
+               <ImageView
+                   android:id="@+id/dinner"
+                   android:background="@drawable/small_card_dinner_en"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent" />
+
+           </LinearLayout>
+
+       </LinearLayout>
+       <LinearLayout
+           android:background="#ffffff"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="0dp">
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_weight="2"
+           android:layout_width="match_parent"
+           android:layout_height="0dp">
+
+
+       </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

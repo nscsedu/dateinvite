@@ -1,0 +1,90 @@
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:background="@drawable/button_bg_whitered_corners"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="14dp"
+
+    android:orientation="vertical"
+
+
+
+
+    >
+
+    <LinearLayout
+        android:id="@+id/cardcolor"
+        android:background="@drawable/shape"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+
+            />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/nameTxt"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="ios test,33"
+            android:textSize="12sp" />
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_gravity="right|center"
+                android:id="@+id/seen"
+                android:background="@drawable/seen1"
+               android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:gravity="bottom"
+                android:layout_gravity="right"
+                android:id="@+id/avilablefor"
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:layout_height="match_parent"
+
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/count"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/date"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="4/10/18 16:20"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+

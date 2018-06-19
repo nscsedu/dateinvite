@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">DateInvite</string>
+    <string name="audio_bitrate">Audio Bitrate (bytes/s)</string>
+    <string name="audio_channel_count">Audio Channel Count</string>
+    <string name="audio_codec">Audio Codec</string>
+    <string name="audio_options">Audio Options</string>
+    <string name="audio_sample_rate">Audio Sample Rate</string>
+    <string name="audio_sample_rate_hz">Audio Sample Rate (Hz)</string>
+    <string name="can_crop_video">Can crop video</string>
+    <string name="can_pad_video">Can pad video</string>
+    <string name="can_upscale_video">Can upscale video</string>
+    <string name="delete_all">Delete All</string>
+    <string name="delete_all_video_files">Are you sure you want to delete all video files?</string>
+    <string name="delete_video_file">Are you sure you want to delete the video file?</string>
+    <string name="error">Error</string>
+    <string name="error_value_is_empty">Value is empty</string>
+    <string name="error_value_is_negative">Value is negative</string>
+    <string name="error_value_is_not_a_number">Value is not a number</string>
+    <string name="error_value_is_zero">Value is zero</string>
+    <string name="launch_video_recorder">Launch Video Recorder</string>
+    <string name="max_file_size">Max file size (MB)</string>
+    <string name="max_recording_time">Max recording (s)</string>
+    <string name="min_recording_time">Min recording (s)</string>
+    <string name="ok">OK</string>
+    <string name="output_format">Output Format</string>
+    <string name="recording">Recording</string>
+    <string name="recording_options">Recording Options</string>
+    <string name="results">Results</string>
+    <string name="success">Success</string>
+    <string name="thumbnail_preview">Thumbnail Preview</string>
+    <string name="video_bitrate">Video Bitrate</string>
+    <string name="video_bitrate_bytes">Video Bitrate (bytes/s)</string>
+    <string name="video_camera_facing">Video Camera Facing</string>
+    <string name="video_codec">Video Codec</string>
+    <string name="video_date">Video Date</string>
+    <string name="video_file_format">Video File Format</string>
+    <string name="video_file_size">Video File Size</string>
+    <string name="video_frames_per_second">Video Frames Per Second</string>
+    <string name="video_frame_rate">Video Frame Rate</string>
+    <string name="video_height">Video Height</string>
+    <string name="video_height_px">Video Height (px)</string>
+    <string name="video_length">Video Length</string>
+    <string name="video_options">Video Options</string>
+    <string name="video_scale_direction">Video Scale Direction</string>
+    <string name="video_scale_fit">Video Scale Fit</string>
+    <string name="video_width">Video Width</string>
+    <string name="video_width_px">Video Width (px)</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="thumbnail_file_size">Thumbnail File Size</string>
+    <string name="unknown">Unknown</string>
+
+    <string name="terms"><u>Terms and Conditions</u></string>
+
+
+    <string name="selected_image">selected_image</string>
+
+    <string name="example"><u>See an example </u></string>
+    <string name="opencamera"><u>Open my camera</u></string>
+
+
+
+    <string name="fromlibrary">Choose from library</string>
+    <string name="fromcamera">Take a selfie</string>
+
+    <string name="privacy"><u>Privacy Policy</u></string>
+    <string name="read">By choosing to continue,i certify i am atleast 18 years\nold and i have read and agree to The DateInvite</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">next</string>
+    <string name="skip"></string>
+    <string name="start"></string>
+
+
+
+    <string name="loremipsom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <string name="loremipsom1">Are you tired of dating apps that engage you in an endless chatting game that can waste hours of your time and, at the end, when you finally meet that person it is not what you expected? Introducing DateInvite!
+
+DateInvite is a true dating site! We skip the chatting online and put you on a date from the very beginning.
+
+All of our members here at DateInvite are willing to meet in person immediately after they start chatting.
+
+Before you register, please answer this important question:
+
+Are you willing to meet someone for a coffee, or a drink, in a public place as soon as possible?</string>
+
+    <string name="slide_1_title">Daily Workout</string>
+    <string name="slide_1_desc">Set your daily workout routine by the help of trainer</string>
+
+    <string name="slide_2_title">Meditation Techniques </string>
+    <string name="slide_2_desc">Learn about the different meditation techniques and practice them</string>
+
+    <string name="slide_3_title">Diet Chart</string>
+    <string name="slide_3_desc">Make your diet chart by the help of health experts</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+
+
+
+        <string-array name="sections">
+            <item >Pro Constructive</item>
+            <item >Con Constructive</item>
+            <item >1st Speaker Cross</item>
+            <item >Pro Rebbutal</item>
+            <item >Con Rebuttal</item>
+            <item >2nd Speaker Cross</item>
+            <item >Pro Summary</item>
+            <item >Con Summary</item>
+            <item >Grand Cross</item>
+            <item >Pro Final Focus</item>
+            <item >Con Final Focus</item>
+        </string-array>
+
+
+</resources>

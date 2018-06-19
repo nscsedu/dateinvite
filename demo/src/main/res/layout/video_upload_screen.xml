@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_5">
+
+
+
+
+
+
+
+
+
+            <!--  <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/dp_5"
+              android:text="What feedback do you have for us?: "
+              android:textStyle="bold"
+              android:textColor="@color/grey_700"/>
+  -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/dotted_border"
+                android:orientation="vertical">
+
+                <!-- <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Upload File "
+                android:textColor="@color/grey_700"
+                android:textStyle="bold" />-->
+
+                <ImageView
+                    android:id="@+id/preview"
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/upload_icon" />
+
+
+                <Button
+                    android:id="@+id/btn_choose_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_login_hover"
+                    android:padding="@dimen/dp_10"
+                    android:text="+ Choose a file to upload"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dp_10"
+                >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="Video Path  :"
+                            android:textColor="@color/grey_700"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_path"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:textColor="@color/grey_600"/>
+
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewResponse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_post_submit"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@drawable/curv_shape_button_hover"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

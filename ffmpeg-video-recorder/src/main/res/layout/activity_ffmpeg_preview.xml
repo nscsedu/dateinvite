@@ -1,0 +1,137 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray">
+
+    <RelativeLayout
+        android:id="@+id/preview_video_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentBottom="true">
+
+        <SurfaceView
+            android:id="@+id/preview_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play_circle_outline_white_120dp"
+            android:layout_centerInParent="true"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/preview_text"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/play_button">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preview Video"
+            android:textColor="#ffffff"
+
+            android:textSize="20sp"
+
+            android:gravity="center"/>
+        </RelativeLayout>
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:id="@+id/progress_bar"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+
+            android:layout_below="@id/preview_video"
+            android:layout_alignLeft="@id/preview_video"
+            android:layout_alignRight="@id/preview_video"/>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/next"
+            android:background="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            >
+
+            <Button
+                android:id="@+id/delete_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+
+
+                android:text="Delete Video"
+                android:background="#FFFFFF"
+                android:src="@drawable/ic_swap_horiz_white_36dp" />
+
+            <Button
+
+                android:id="@+id/nextpage"
+                android:layout_gravity="right"
+
+               android:layout_toLeftOf="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/delete_button"
+                android:layout_alignBottom="@+id/delete_button"
+
+
+
+                android:background="#FFFFFF"
+                android:padding="10dp"
+                android:text="next" />
+            <Button
+
+                android:id="@+id/back"
+                android:layout_gravity="right"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/delete_button"
+                android:layout_alignBottom="@+id/delete_button"
+
+
+
+                android:background="#FFFFFF"
+                android:padding="10dp"
+                android:text="Save" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/preview_video"/>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

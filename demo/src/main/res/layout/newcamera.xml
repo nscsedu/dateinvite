@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:background="#f6f6f6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+
+            >
+            <TextView
+                android:background="#ffffff"
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="Add avideo selfie now."
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:textAlignment="center"/>
+
+
+
+
+            <RelativeLayout
+                android:background="#ffffff"
+                android:id="@+id/relativeLayoutThuid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_below="@id/relativeLaoytSecond"
+                android:layout_marginTop="10dp"
+
+                >
+
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/samplevideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Enter Your city "
+                        android:paddingLeft="10dp" />
+                    <Button
+                        android:layout_below="@+id/samplevideo"
+                        android:id="@+id/opencamera"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Enter Your city "
+                        android:paddingLeft="10dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeThird"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/relativeLayoutThuid"
+            android:layout_marginTop="10dp"
+
+            >
+            <TextView
+                android:id="@+id/tvDateofBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth "
+                android:textSize="14sp"
+
+
+                />
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDateofBirth"
+
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/editTextDateofBirth"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:focusable="false"
+
+                    android:layout_height="40dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <LinearLayout
+
+
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+
+
+            <Button
+                android:id="@+id/skip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Skip" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+
+        ></RelativeLayout>
+</RelativeLayout>

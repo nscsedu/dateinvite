@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Push Notification"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/block_users"
+        android:orderInCategory="100"
+        android:title="Block Users"
+        app:showAsAction="never" />
+    <item
+    android:id="@+id/profile_invisible"
+    android:orderInCategory="100"
+    android:title="Make my profile invisible"
+    app:showAsAction="never" />
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="100"
+        android:title="Help"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="About Dateinvite"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/privacypolicy"
+        android:orderInCategory="100"
+        android:title="Privacy Policy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/terms"
+        android:orderInCategory="100"
+        android:title="Terms and Conditions"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Log Out"
+        app:showAsAction="never" />
+</menu>

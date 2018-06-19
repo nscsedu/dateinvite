@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <FrameLayout
+        android:id="@+id/myFrame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="?attr/homeAsUpIndicator" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+
+                    android:background="@drawable/dateinvidebanner1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    android:layout_marginBottom="10dp"
+
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="2"
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <EditText
+                    android:text="t1@test.com"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/my_border"
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="  Email"
+                    android:maxLines="1"
+                    android:inputType="text"
+
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight=".4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="2"
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <EditText
+                    android:inputType="textPassword"
+                    android:text="123124"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/my_border"
+                    android:id="@+id/Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="  Password"
+                    android:maxLines="1"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight=".6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:background="@drawable/login_button"
+
+                    android:textColor="#ffffff"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="11.4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

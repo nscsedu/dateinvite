@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:background="#f6f6f6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff"
+
+        >
+        <TextView
+            android:background="#ffffff"
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Your Location"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:textAlignment="center"/>
+
+
+        <Spinner
+
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            />
+
+        <RelativeLayout
+            android:background="#ffffff"
+            android:id="@+id/relativeLaoytSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+
+                android:id="@+id/relativeLayoutfullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/editTextFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="State"
+                    android:paddingLeft="10dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#ffffff"
+            android:id="@+id/relativeLayoutThuid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@id/relativeLaoytSecond"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Enter Your city "
+                    android:paddingLeft="10dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeThird"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/relativeLayoutThuid"
+            android:layout_marginTop="10dp"
+
+            >
+            <TextView
+                android:id="@+id/tvDateofBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth "
+                android:textSize="14sp"
+
+
+                />
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDateofBirth"
+
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/editTextDateofBirth"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:focusable="false"
+
+                    android:layout_height="40dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#ffffff"
+            android:id="@+id/relativeLayoutkid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeThird"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+
+            >
+            <TextView
+                android:id="@+id/tvTitlekid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=" kids:"
+                android:textSize="14sp"
+
+
+                />
+            <RadioGroup
+
+                android:id="@+id/radioGroupkid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/tvTitlekid"
+                android:orientation="horizontal">
+                <RadioButton android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiokidyes"
+
+
+                    android:textSize="14sp"
+                    android:text="Yes">
+                </RadioButton>
+                <RadioButton android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiokidno"
+                    android:text="No"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+
+                    />
+
+
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#ffffff"
+            android:id="@+id/relativeLayoutDrink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeThird"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+
+
+
+            >
+            <TextView
+                android:id="@+id/tvTitleDrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drink?"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14sp"
+
+
+                />
+            <RadioGroup
+
+                android:id="@+id/radioGroupdrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/tvTitleDrink"
+                android:orientation="horizontal">
+                <RadioButton android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiodrinkno"
+
+
+                    android:textSize="14sp"
+                    android:text="No">
+                </RadioButton>
+                <RadioButton android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiosocialdrinker"
+                    android:text="Social Drinker"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+
+                    />
+
+
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="#ffffff"
+            android:id="@+id/relativeLayoutFourth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeThird"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+
+            >
+            <TextView
+                android:id="@+id/tvTitleGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Smoker?"
+                android:textSize="14sp"
+
+
+                />
+            <RadioGroup
+
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/tvTitleGender"
+                android:orientation="horizontal">
+                <RadioButton android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioCigarrets"
+
+
+                    android:textSize="14sp"
+                    android:text="Cigarrets">
+                </RadioButton>
+                <RadioButton android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioCigar"
+                    android:text="Cigar"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+
+                    />
+                <RadioButton android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioNo"
+                    android:text="No"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+
+                    >
+                </RadioButton>
+
+
+            </RadioGroup>
+            <RadioGroup android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeFifth"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/relativeLayoutFourth"
+
+
+            >
+            <TextView
+                android:id="@+id/tvMobileNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No"
+                android:textSize="14sp"
+
+
+                />
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMobileNo"
+
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/editTextMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:inputType="phone"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+
+
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5">
+
+
+
+            <Button
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="BACK" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="NEXT" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+
+        ></RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,270 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray">
+    <TextView
+        android:id="@+id/recordvideotext"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/recorder_progress"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+       android:background="#FFFFFF"
+        android:textSize="20sp"
+
+        android:gravity="center"
+        android:text="Record your video profile" />
+
+    <RelativeLayout
+        android:id="@+id/recorder_video_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recordvideotext"
+        android:layout_alignParentBottom="true">
+
+        <com.braincraft.social.ui.CameraPreviewView
+            android:id="@+id/recorder_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@android:color/black">
+
+            <com.braincraft.social.ui.CameraTapAreaView
+                android:id="@+id/tap_to_focus_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <RelativeLayout
+
+                android:id="@+id/record_limit"
+                android:layout_above="@id/rt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="48dp"
+                android:background="@drawable/right"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+
+                    android:textColor="#ffffff"
+
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+
+
+
+        </com.braincraft.social.ui.CameraPreviewView>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/record_video"/>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <com.braincraft.social.ui.ProgressSectionsView
+        android:id="@+id/recorder_progress"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/dark_gray"/>
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/recorder_progress"
+        android:background="@color/dark_gray"
+        android:gravity="center"
+        android:text="Record your video profile"
+        android:textColor="#ffffff"/>
+    <TextView
+
+        android:id="@+id/next"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/next1"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:textSize="20sp"
+        android:text="Tap and hold the REC button to record" />
+    <TextView
+
+        android:id="@+id/next1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:textSize="20sp"
+        android:text="(10 seconds max)"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/next"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+
+
+           android:text="Delete"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_swap_horiz_white_36dp" />
+        <Button
+            android:id="@+id/next_button"
+            android:layout_gravity="right"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/delete_button"
+            android:layout_alignBottom="@+id/delete_button"
+
+
+
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:text="Next" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_message"
+        android:layout_centerInParent="true"
+        android:background="@drawable/middle"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/rt">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#ffffff"
+
+            android:textSize="20sp"
+
+            android:gravity="center"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rt1"
+        android:layout_marginBottom="46dp"
+       >
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/switch_camera_button"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_swap_horiz_white_36dp" />
+
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/record_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/record_button"/>
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/flash_button"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_flash_off_white_36dp" />
+
+
+
+    </RelativeLayout>
+
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        android:id="@+id/progress_bar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="true"/>
+
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/initializing"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

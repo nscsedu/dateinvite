@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="?attr/homeAsUpIndicator" />
+    <Switch
+        android:id="@+id/myswitch1"
+        android:thumbTint="@color/white"
+        android:trackTint="#32CD32"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/normal1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="     Invitations"
+        android:layout_gravity="center"
+        android:gravity="left|center"
+        android:textSize="20sp"
+        />
+    <Switch
+        android:id="@+id/myswitch2"
+        android:thumbTint="@color/white"
+        android:trackTint="#32CD32"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/normal1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="     Said Hi"
+        android:layout_gravity="center"
+        android:gravity="left|center"
+        android:textSize="20sp"
+        />
+    <Switch
+        android:id="@+id/myswitch3"
+        android:textSize="20sp"
+        android:thumbTint="@color/white"
+        android:trackTint="#32CD32"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/normal1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="     Video messages"
+        android:layout_gravity="center"
+        android:gravity="left|center"
+        />
+
+</LinearLayout>

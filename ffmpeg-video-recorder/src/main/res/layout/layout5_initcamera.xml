@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/button_bgwhite_rounded_corners"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_weight="12"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="14"
+            android:layout_weight="3.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/icon_vedio"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:textColor="@color/grey_600"
+                android:layout_weight="3"
+                android:background="#ffffff"
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Add a video selfie now."
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:id="@+id/samplevideo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#0000FF"
+                android:text="@string/example"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_below="@+id/samplevideo"
+                android:id="@+id/opencamera"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#0000FF"
+                android:text="@string/opencamera"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp">
+        <TextView
+            android:background="@drawable/button_bgash_rounded_corners"
+            android:textColor="#FFFFFF"
+            android:id="@+id/skipvideo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="Skip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
+    <LinearLayout
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+
+
+            android:id="@+id/bottom1"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/process3"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

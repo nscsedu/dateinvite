@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.braincraft.myapplication.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ActivityTheme">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ActivityTheme" >
+            <!--
+            <ImageView
+                android:layout_margin="5dp"
+                android:background="@drawable/filter_dt"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:textColor="#FF0000"
+                android:layout_gravity="right"
+                />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="6.6">
+
+                <ImageView
+                android:layout_weight=".5"
+                android:layout_margin="5dp"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
+                android:layout_gravity="right"
+                />
+                <ImageView
+                    android:id="@+id/normalmessage"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/hi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+
+                    android:layout_gravity="right"
+                    />
+                <TextView
+                    android:text="0"
+                    android:textColor="#008000"
+
+                    android:gravity="top"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                    />
+                <ImageView
+                    android:id="@+id/videomessage"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/videoicon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+
+                    android:layout_gravity="right"
+                    />
+                <TextView
+                    android:text="0"
+                    android:textColor="#FFA500"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/likedandme"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/asdasd"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+
+                    android:layout_gravity="right"
+                    />
+                <TextView
+                    android:text="0"
+                    android:textColor="#0000FF"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_weight=".5"
+                    android:layout_margin="5dp"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+
+                    android:layout_gravity="right"
+                    />
+                <ImageView
+                    android:id="@+id/goprofile"
+                    android:layout_weight="2"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/filter_dt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+
+                    android:layout_gravity="right"
+                    />
+            </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include layout="@layout/card_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>

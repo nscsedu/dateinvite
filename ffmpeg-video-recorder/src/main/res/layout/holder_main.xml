@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.braincraft.myapplication.MainActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ActivityTheme">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ActivityTheme" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="7">
+
+
+                <ImageView
+                    android:id="@+id/normalmessage"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/hi"
+                    android:layout_width="5dp"
+                    android:layout_height="40dp"
+
+
+                    android:layout_gravity="center"
+                    />
+
+
+                <TextView
+                    android:text="0"
+                    android:layout_gravity="right|top"
+                    android:textColor="#008000"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+
+                <ImageView
+                    android:id="@+id/videomessage"
+                    android:layout_weight="1.2"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/videoicon"
+                    android:layout_width="5dp"
+                    android:layout_height="40dp"
+
+
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:text="0"
+                    android:layout_gravity="right|top"
+                    android:textColor="#FFA500"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/likedandme"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/asdasd"
+                    android:layout_width="5dp"
+                    android:layout_height="50dp"
+
+
+                    android:layout_gravity="center"
+                    />
+
+
+                <TextView
+                    android:text="0"
+                    android:layout_gravity="right|top"
+                    android:textColor="#0000FF"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/goprofile"
+                    android:layout_weight=".7"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/filter_dt"
+                    android:layout_width="5dp"
+                    android:layout_height="40dp"
+
+
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:background="@drawable/background"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background"
+            android:fillViewport="true">
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/test1234"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+
+
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/test123"
+                    android:layout_below="@+id/test1234"
+                    android:layout_above="@+id/demo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:text="Top Countries:"
+                    android:gravity="center"
+
+                    />
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#DCDCDC"
+                    android:id="@+id/demo"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <LinearLayout
+                        android:id="@+id/colombia1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/colombia"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="9"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:background="@drawable/colombia"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/usa1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:id="@+id/usa"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="9"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:background="@drawable/usa"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/brazil1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:id="@+id/brazil"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="9"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:background="@drawable/brazil"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/canada1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:id="@+id/canada"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="9"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:background="@drawable/austria_flage"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/demo1"
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_bg_whitered_corners"
+                    android:textColor="#646666"
+                    android:orientation="horizontal"
+                    android:weightSum="14"
+                    android:layout_below="@+id/demo"
+                    >
+                    <TextView
+
+                        android:id="@+id/contactad"
+                        android:layout_weight="12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Contact Admin"
+                        android:textColor="#323232"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/contact_admin"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/headphone"
+                        android:gravity="right"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/cardrv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/demo1"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/progress_wheel"
+                        android:scrollbars="vertical" />
+
+                    <!-- We need this loading wheel, only when loading more -->
+                    <com.pnikosis.materialishprogress.ProgressWheel
+                        android:id="@+id/progress_wheel"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        wheel:matProg_barColor="@color/colorPrimary"
+                        wheel:matProg_progressIndeterminate="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

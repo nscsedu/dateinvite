@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_welcome">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <com.robohorse.pagerbullet.PagerBullet
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:panelHeightInDp="17dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dots_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:id="@+id/logindemo1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:textColor="@android:color/white"
+        android:layout_above="@id/layoutDots"
+
+        >
+        <LinearLayout
+            android:id="@+id/logindemo"
+            android:background="@color/grey_500"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="HAVE AN ACCOUNT? SIGN IN"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/red_500"
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="REGISTER"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:text="@string/next"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:text="@string/skip"
+        android:textColor="@android:color/black" />
+
+
+
+
+
+</RelativeLayout>
